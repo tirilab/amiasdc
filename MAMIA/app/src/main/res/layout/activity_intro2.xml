@@ -7,4 +7,56 @@
         android:layout_height="match_parent"
         tools:context=".IntroActivity2">
 
+    <TextView
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:id="@+id/intro1_text"
+            tools:text="Allow us to get your age, race, ethnicity, and trimester?"
+            android:fontFamily="sans-serif"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:gravity="center_horizontal"
+            android:textSize="30sp"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintVertical_bias="0.4"/>
+
+    <Button
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/intro1_text"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="60dp"
+            android:layout_marginLeft="100dp"
+            android:layout_marginStart="100dp"
+            android:id="@+id/button"
+            android:onClick="prevActivity"
+            android:background="@drawable/border"
+            android:text="@string/no"
+            android:fontFamily="sans-serif"
+            android:textStyle="bold"
+            android:textColor="@color/red_1"
+            app:backgroundTint="@null"
+            tools:ignore="UsingOnClickInXml"/>
+
+    <Button
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/intro1_text"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="60dp"
+            android:layout_marginRight="100dp"
+            android:layout_marginEnd="100dp"
+            android:id="@+id/button2"
+            android:onClick="nextActivity"
+            android:background="@drawable/border"
+            android:text="@string/yes"
+            android:fontFamily="sans-serif"
+            android:textStyle="bold"
+            app:backgroundTint="@color/red_1"
+            tools:ignore="UsingOnClickInXml"/>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
