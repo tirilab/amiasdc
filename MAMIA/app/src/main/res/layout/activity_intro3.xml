@@ -7,4 +7,84 @@
         android:layout_height="match_parent"
         tools:context=".IntroActivity3">
 
+    <TextView
+            android:text="@string/age"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/age_text"
+            android:fontFamily="sans-serif"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:gravity="center_horizontal"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginLeft="40dp"
+            android:layout_marginStart="40dp"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="160dp"/>
+
+    <TextView
+            android:text="@string/race"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/race_text"
+            android:fontFamily="sans-serif"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:gravity="center_horizontal"
+            android:textSize="20sp"
+            android:layout_marginTop="150dp"
+            app:layout_constraintTop_toBottomOf="@+id/age_text"
+            app:layout_constraintLeft_toLeftOf="@+id/age_text"/>
+
+    <TextView
+            android:text="@string/ethnicity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ethnicity_text"
+            android:fontFamily="sans-serif"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:gravity="center_horizontal"
+            android:textSize="20sp"
+            android:layout_marginTop="150dp"
+            app:layout_constraintTop_toBottomOf="@+id/race_text"
+            app:layout_constraintLeft_toLeftOf="@+id/race_text"/>
+
+
+    <Spinner
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/age_spinner"
+            android:addStatesFromChildren="false"
+            app:layout_constraintTop_toBottomOf="@+id/age_text"
+            app:layout_constraintStart_toStartOf="@+id/age_text"
+            android:layout_marginTop="20dp"
+            android:fontFamily="sans-serif"
+            android:textColor="@color/black"/>
+
+    <Spinner
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/race_spinner"
+            android:addStatesFromChildren="false"
+            app:layout_constraintTop_toBottomOf="@+id/race_text"
+            app:layout_constraintStart_toStartOf="@+id/race_text"
+            android:layout_marginTop="20dp"
+            android:fontFamily="sans-serif"
+            android:textColor="@color/black"/>
+
+    <Spinner
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/ethnicity_spinner"
+            android:addStatesFromChildren="false"
+            app:layout_constraintTop_toBottomOf="@+id/ethnicity_text"
+            app:layout_constraintStart_toStartOf="@+id/ethnicity_text"
+            android:layout_marginTop="20dp"
+            android:fontFamily="sans-serif"
+            android:textColor="@color/black"/>
+
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>

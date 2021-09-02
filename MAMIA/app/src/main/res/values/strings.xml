@@ -5,6 +5,21 @@
     <string name="logo">logo</string>
     <string name="yes">yes</string>
     <string name="no">no</string>
+    <string name="age">Age:</string>
+    <string name="race">Race:</string>
+    <string name="ethnicity">Ethnicity:</string>
+    <string-array name="ageArray">
+        <item>0-9</item>
+        <item>10-19</item>
+        <item>20-29</item>
+        <item>30-39</item>
+        <item>40-49</item>
+        <item>50-59</item>
+        <item>60-69</item>
+        <item>70-79</item>
+        <item>80-89</item>
+        <item>90-99</item>
+    </string-array>
     <string-array name="raceArray">
         <item>Race</item>
         <item>American Indian or Alaska Native</item>
