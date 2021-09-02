@@ -1,3 +1,24 @@
 <resources>
     <string name="app_name">MAMIA</string>
+    <string name="mamia">mAMIA</string>
+    <string name="home_screen">home screen</string>
+    <string name="logo">logo</string>
+    <string name="yes">yes</string>
+    <string name="no">no</string>
+    <string-array name="raceArray">
+        <item>Race</item>
+        <item>American Indian or Alaska Native</item>
+        <item>Asian</item>
+        <item>Black or African American</item>
+        <item>Native Hawaiian or Other Pacific Islander</item>
+        <item>White</item>
+        <item>Other</item>
+    </string-array>
+    <string-array name="ethnicityArray">
+        <item>Ethnicity</item>
+        <item>Hispanic or Latino</item>
+        <item>Not Hispanic or Latino</item>
+    </string-array>
+
+
 </resources>
