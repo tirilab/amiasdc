@@ -7,4 +7,59 @@
         android:layout_height="match_parent"
         tools:context=".IntroActivity4">
 
+    <TextView
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:id="@+id/intro4_text"
+            tools:text="The first day of your LMP?"
+            android:fontFamily="sans-serif"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:gravity="center_horizontal"
+            android:textSize="30sp"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintVertical_bias="0.2"/>
+
+    <LinearLayout
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/border_calendar"
+            app:layout_constraintTop_toBottomOf="@+id/intro4_text"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:id="@+id/intro4_calendar">
+
+        <CalendarView
+                android:layout_width="wrap_content"
+                android:layout_height="320dp">
+
+        </CalendarView>
+
+    </LinearLayout>
+
+    <Button
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/intro4_calendar"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:gravity="center"
+            android:layout_marginTop="60dp"
+            android:id="@+id/button2"
+            android:onClick="nextActivity"
+            android:background="@drawable/border"
+            android:text="@string/next"
+            android:fontFamily="sans-serif"
+            android:textStyle="bold"
+            app:backgroundTint="@color/red_1"
+            tools:ignore="UsingOnClickInXml"/>
+
+
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
