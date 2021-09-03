@@ -9,6 +9,8 @@
             android:roundIcon="@mipmap/ic_launcher_round"
             android:supportsRtl="true"
             android:theme="@style/Theme.MAMIA">
+        <activity android:name=".IntroActivity4">
+        </activity>
         <activity android:name=".IntroActivity3">
         </activity>
         <activity android:name=".IntroActivity2">
