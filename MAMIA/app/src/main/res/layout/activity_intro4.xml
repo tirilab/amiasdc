@@ -20,27 +20,20 @@
             android:textStyle="bold"
             android:textColor="@color/black"
             android:gravity="center_horizontal"
-            android:textSize="30sp"
+            android:textSize="26sp"
             app:layout_constraintHorizontal_bias="0.5"
-            app:layout_constraintVertical_bias="0.2"/>
+            app:layout_constraintVertical_bias="0.12"/>
 
-    <LinearLayout
-            android:layout_width="300dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="50dp"
+    <CalendarView
+            android:layout_width="wrap_content"
+            android:layout_height="320dp"
+            android:layout_marginTop="20dp"
             android:background="@drawable/border_calendar"
             app:layout_constraintTop_toBottomOf="@+id/intro4_text"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             android:id="@+id/intro4_calendar">
-
-        <CalendarView
-                android:layout_width="wrap_content"
-                android:layout_height="320dp">
-
-        </CalendarView>
-
-    </LinearLayout>
+    </CalendarView>
 
     <Button
             android:layout_width="80dp"
@@ -49,7 +42,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             android:gravity="center"
-            android:layout_marginTop="60dp"
+            android:layout_marginTop="20dp"
             android:id="@+id/button2"
             android:onClick="nextActivity"
             android:background="@drawable/border"
@@ -58,6 +51,21 @@
             android:textStyle="bold"
             app:backgroundTint="@color/red_1"
             tools:ignore="UsingOnClickInXml"/>
+
+    <TextView
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/button2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:id="@+id/lmp_definition"
+            tools:text="The first day of your LMP, or last menstrual period, helps us know what trimester you are in :)"
+            android:fontFamily="sans-serif"
+            android:textStyle="italic"
+            android:textColor="@color/black"
+            android:gravity="center_horizontal"
+            android:textSize="20sp"
+            android:layout_marginTop="40dp"/>
 
 
 
