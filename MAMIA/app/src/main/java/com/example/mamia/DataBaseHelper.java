@@ -24,7 +24,6 @@ public class DataBaseHelper extends SQLiteOpenHelper {
     public void onCreate(SQLiteDatabase db) {
         String createTableStatement = "CREATE TABLE " + USER_TABLE + " (" + COLUMN_ID + " INTERGER PRIMARY KEY AUTOINCREMENT, " + COLUMN_CUSTOMER_AGE + " TEXT, " + COLUMN_CUSTOMER_RACE + " TEXT, " + COLUMN_CUSTOMER_ETHNICITY+ " TEXT, " + COLUMN_CUSTOMER_LMP + " TEXT)";
         db.execSQL(createTableStatement);
-
     }
 
     // called if database version number changes

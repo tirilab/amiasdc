@@ -11,7 +11,7 @@ import android.os.Bundle;
 
 public class IntroActivity4 extends AppCompatActivity {
 
-    CalendarView calendarView;
+//    CalendarView calendarView;
     String date;
     Button nextButton;
 
@@ -20,27 +20,18 @@ public class IntroActivity4 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_intro4);
 
-        calendarView = (CalendarView) findViewById(R.id.intro4_calendar);
-
-        calendarView.setOnDateChangeListener(new CalendarView.OnDateChangeListener() {
-            @Override
-            public void onSelectedDayChange(@NonNull CalendarView calendarView, int i, int i1, int i2) {
-                date = (i1 +1 ) + "/" + i2 + "/" + i;
-            }
+//        calendarView.setOnDateChangeListener(new CalendarView.OnDateChangeListener() {
+//            @Override
+//            public void onSelectedDayChange(@NonNull CalendarView calendarView, int i, int i1, int i2) {
+//                date = (i1 +1 ) + "/" + i2 + "/" + i;
+//            }
+//        });
+        nextButton = findViewById(R.id.button4);
+        // when click next button
+        nextButton.setOnClickListener(view -> {
+            Intent i = new Intent(IntroActivity4.this, InputActivity.class);
+            startActivity(i);
         });
 
-        nextButton.setOnClickListener(new View.OnClickListener() {
-            // when click next button
-            @Override
-            public void onClick(View view) {
-
-            }
-        });
-
-    }
-
-    public void nextActivity(View v) {
-        Intent i = new Intent(this, InputActivity.class);
-        startActivity(i);
     }
 }

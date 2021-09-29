@@ -23,20 +23,23 @@ public class IntroActivity3 extends AppCompatActivity {
         ethnicity_spinner = findViewById(R.id.ethnicity_spinner);
 
         getInput();
+        nextButton = findViewById(R.id.button3);
+        // when click next button
+        nextButton.setOnClickListener(view -> {
+//            UserModel userModel = new UserModel(-1,
+//                    age_spinner.getSelectedItem().toString(),
+//                    race_spinner.getSelectedItem().toString(),
+//                    ethnicity_spinner.getSelectedItem().toString(), "-1");
+//            DataBaseHelper dataBaseHelper = new DataBaseHelper(IntroActivity3.this);
+//            boolean success = dataBaseHelper.addOne(userModel);
 
-        nextButton.setOnClickListener(new View.OnClickListener() {
-            // when click next button
-            @Override
-            public void onClick(View view) {
-                UserModel userModel = new UserModel(-1, age_spinner.getSelectedItem().toString(), race_spinner.getSelectedItem().toString(), ethnicity_spinner.getSelectedItem().toString(), "-1");
-                DataBaseHelper dataBaseHelper = new DataBaseHelper(IntroActivity3.this);
-                boolean success = dataBaseHelper.addOne(userModel);
-            }
+            Intent i = new Intent(IntroActivity3.this, IntroActivity4.class);
+            startActivity(i);
         });
     }
 
     private void getInput() {
-        age_spinner = (Spinner) findViewById(R.id.age_spinner);
+        age_spinner = findViewById(R.id.age_spinner);
         // style and population spinner
         ArrayAdapter<String> a1 = new ArrayAdapter<String>(IntroActivity3.this,
                 android.R.layout.simple_list_item_1, getResources().getStringArray(R.array.ageArray));
@@ -45,22 +48,17 @@ public class IntroActivity3 extends AppCompatActivity {
         // attaching data adapter to spinner
         age_spinner.setAdapter(a1);
 
-        race_spinner = (Spinner) findViewById(R.id.race_spinner);
+        race_spinner = findViewById(R.id.race_spinner);
         ArrayAdapter<String> a2 = new ArrayAdapter<String>(IntroActivity3.this,
                 android.R.layout.simple_list_item_1, getResources().getStringArray(R.array.raceArray));
         a2.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         race_spinner.setAdapter(a2);
 
-        ethnicity_spinner = (Spinner) findViewById(R.id.ethnicity_spinner);
+        ethnicity_spinner = findViewById(R.id.ethnicity_spinner);
         ArrayAdapter<String> a3 = new ArrayAdapter<String>(IntroActivity3.this,
                 android.R.layout.simple_list_item_1, getResources().getStringArray(R.array.ethnicityArray));
         a3.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         ethnicity_spinner.setAdapter(a3);
-    }
-
-    public void nextActivity(View v) {
-        Intent i = new Intent(this, IntroActivity4.class);
-        startActivity(i);
     }
 
 }

@@ -1,25 +1,29 @@
 package com.example.mamia;
 
 import android.content.Intent;
-import android.view.View;
+import android.widget.Button;
 import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 
 public class IntroActivity2 extends AppCompatActivity {
+    Button b1, b2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_intro2);
-    }
 
-    public void nextActivity(View v) {
-        Intent i = new Intent(this, IntroActivity3.class);
-        startActivity(i);
-    }
+        b1 = findViewById(R.id.button21);
+        b1.setOnClickListener(view -> {
+            Intent i = new Intent(IntroActivity2.this, MainActivity.class);
+            startActivity(i);
+        });
 
-    public void prevActivity(View v) {
-        Intent i = new Intent(this, IntroActivity1.class);
-        startActivity(i);
+        b2 = findViewById(R.id.button22);
+        b2.setOnClickListener(view -> {
+            Intent i = new Intent(IntroActivity2.this, IntroActivity3.class);
+            startActivity(i);
+        });
+
     }
 }
