@@ -1,4 +1,4 @@
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
     <string name="app_name">MAMIA</string>
     <string name="mamia">mAMIA</string>
     <string name="home_screen">home screen</string>
@@ -9,11 +9,24 @@
     <string name="race">Race:</string>
     <string name="ethnicity">Ethnicity:</string>
     <string name="next">Next</string>
-    <string name="dashboard">Dashboard</string>
     <string name="input">Input</string>
     <string name="journal_entry">journal entry</string>
     <string name="allow_us_to_access_your_fitbit_data">Allow us to access your fitbit data?</string>
-    <string name="the_first_day_of_your_lmp">The first day of your LMP?</string>
+    <string name="the_first_day_of_your_lmp">The first day of your last menstrual period?</string>
+    <string name="app_label">MAMIA</string>
+    <string name="search_hint">Search for a topic or question...</string>
+    <string name="hello">Hello,</string>
+    <string name="what_do_you_want_to_do_today">what do you want to do today?</string>
+    <string name="complete_today_s_journal_entry">Complete today\'s journal entry</string>
+    <string name="view_your_recommendations">View your recommendations</string>
+    <string name="change_settings_and_consent_options">Change settings and consent options</string>
+    <string name="view_dashboard">View Dashboard</string>
+    <string name="for_mom_s_health">FOR MOM\'S HEALTH!</string>
+    <string name="allow_us_to_get_your_age_race_ethnicity_and_trimester">Allow us to get your age, race, ethnicity, and trimester?</string>
+    <string name="view_previous_entries">View previous entries</string>
+    <string name="dashboard">Dashboard</string>
+    <string name="recommendations">Recommendations</string>
+    <string name="graphs">graphs</string>
     <string-array name="ageArray">
         <item>Select your age group</item>
         <item>0-9</item>

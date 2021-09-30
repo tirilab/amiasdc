@@ -9,15 +9,13 @@
             android:roundIcon="@mipmap/ic_launcher_round"
             android:supportsRtl="true"
             android:theme="@style/Theme.MAMIA">
-        <activity
-                android:name=".JournalActivity"
-                android:exported="true"
-                android:screenOrientation="fullSensor">
+        <activity android:name=".InputSettingsActivity">
         </activity>
-        <activity
-                android:name=".DashboardActivity"
-                android:exported="true"
-                android:screenOrientation="fullSensor">
+        <activity android:name=".InputRecommendationsActivity">
+        </activity>
+        <activity android:name=".InputDashboardActivity">
+        </activity>
+        <activity android:name=".InputJournalActivity">
         </activity>
         <activity
                 android:name=".InputActivity"

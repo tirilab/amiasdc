@@ -11,7 +11,7 @@ import android.os.Bundle;
 
 public class IntroActivity4 extends AppCompatActivity {
 
-//    CalendarView calendarView;
+    CalendarView calendarView;
     String date;
     Button nextButton;
 
@@ -26,6 +26,7 @@ public class IntroActivity4 extends AppCompatActivity {
 //                date = (i1 +1 ) + "/" + i2 + "/" + i;
 //            }
 //        });
+
         nextButton = findViewById(R.id.button4);
         // when click next button
         nextButton.setOnClickListener(view -> {

@@ -15,7 +15,7 @@
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             android:id="@+id/intro1_text"
-            android:text="Allow us to get your age, race, ethnicity, and trimester?"
+            android:text="@string/allow_us_to_get_your_age_race_ethnicity_and_trimester"
             android:fontFamily="sans-serif"
             android:textStyle="bold"
             android:textColor="@color/black"
