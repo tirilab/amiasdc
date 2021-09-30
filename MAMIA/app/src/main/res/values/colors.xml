@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="red_1">#ce2b27</color>
-    <color name="red_2">#EA4C46</color>
-    <color name="red_3">#F07570</color>
-    <color name="red_3_transparent">#AAF07570</color>
+    <color name="red_1">#EA4C46</color>
+    <color name="red_2">#F07570</color>
+    <color name="red_2_transparent">#AAF07570</color>
     <color name="yellow_1">#FFDA00</color>
     <color name="green_1">#76BA1B</color>
     <color name="black">#FF000000</color>

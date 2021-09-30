@@ -17,16 +17,14 @@
     <string name="search_hint">Search for a topic or question...</string>
     <string name="hello">Hello,</string>
     <string name="what_do_you_want_to_do_today">what do you want to do today?</string>
-    <string name="complete_today_s_journal_entry">Complete today\'s journal entry</string>
-    <string name="view_your_recommendations">View your recommendations</string>
-    <string name="change_settings_and_consent_options">Change settings and consent options</string>
-    <string name="view_dashboard">View Dashboard</string>
     <string name="for_mom_s_health">FOR MOM\'S HEALTH!</string>
     <string name="allow_us_to_get_your_age_race_ethnicity_and_trimester">Allow us to get your age, race, ethnicity, and trimester?</string>
     <string name="view_previous_entries">View previous entries</string>
     <string name="dashboard">Dashboard</string>
     <string name="recommendations">Recommendations</string>
     <string name="graphs">graphs</string>
+    <string name="journal">Journal</string>
+    <string name="settings">Settings</string>
     <string-array name="ageArray">
         <item>Select your age group</item>
         <item>0-9</item>
