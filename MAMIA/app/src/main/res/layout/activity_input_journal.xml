@@ -21,7 +21,7 @@
             android:gravity="center_horizontal"
             android:textSize="40sp"
             app:layout_constraintHorizontal_bias="0.5"
-            app:layout_constraintVertical_bias="0.1"/>
+            app:layout_constraintVertical_bias="0.05"/>
 
     <Spinner
             android:layout_width="350dp"
@@ -46,9 +46,7 @@
             app:layout_constraintRight_toRightOf="parent"
             android:layout_marginTop="10dp"
             android:layout_marginRight="20dp"
-            android:layout_marginEnd="20dp"
             android:layout_marginLeft="20dp"
-            android:layout_marginStart="20dp"
             android:layout_height="250dp"
             android:padding="10dp"
             android:id="@+id/journal_entry"
@@ -60,15 +58,23 @@
             android:textColor="@color/black"
             android:textSize="20sp"/>
 
+    <CheckBox
+            android:text="@string/save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/checkBox"
+            app:layout_constraintTop_toBottomOf="@+id/journal_entry"
+            app:layout_constraintEnd_toEndOf="@+id/journal_entry"/>
+
     <Button
             android:layout_width="200dp"
             android:layout_height="wrap_content"
-            app:layout_constraintTop_toBottomOf="@+id/journal_entry"
+            app:layout_constraintTop_toBottomOf="@+id/checkBox"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintBottom_toBottomOf="parent"
             android:gravity="center"
-            android:layout_marginBottom="50dp"
+            android:layout_marginBottom="0dp"
             android:id="@+id/button4"
             android:background="@drawable/border"
             android:text="@string/view_previous_entries"
@@ -76,26 +82,6 @@
             android:textStyle="bold"
             app:backgroundTint="@color/red_1"
             tools:ignore="UsingOnClickInXml"/>
-
-    <Button
-            android:layout_width="200dp"
-            android:layout_height="wrap_content"
-            app:layout_constraintTop_toBottomOf="@+id/journal_entry"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintBottom_toBottomOf="parent"
-            android:gravity="center"
-            android:layout_marginBottom="50dp"
-            android:id="@+id/button5"
-            android:background="@drawable/border"
-            android:text="@string/view_previous_entries"
-            android:fontFamily="sans-serif"
-            android:textStyle="bold"
-            app:backgroundTint="@color/red_1"
-            tools:ignore="UsingOnClickInXml"/>
-
-
-
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

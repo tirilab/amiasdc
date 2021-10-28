@@ -70,6 +70,8 @@ public class InputRecommendationsActivity extends AppCompatActivity {
 
     public void initList() {
         items = new String[]{
+                "Trimester 1",
+                "New mother",
                 "CDC daily nutrition guidelines",
                 "foods to avoid during pregnancy",
                 "WHO guideline exercises",
