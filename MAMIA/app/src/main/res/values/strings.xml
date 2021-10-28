@@ -15,16 +15,23 @@
     <string name="the_first_day_of_your_lmp">The first day of your last menstrual period?</string>
     <string name="app_label">MAMIA</string>
     <string name="search_hint">Search for a topic or question...</string>
-    <string name="hello">Hello,</string>
-    <string name="what_do_you_want_to_do_today">what do you want to do today?</string>
+    <string name="welcome_message">Hello, %1$s!</string>
+    <string name="what_do_you_want_to_do">what do you want to do?</string>
     <string name="for_mom_s_health">FOR MOM\'S HEALTH!</string>
     <string name="allow_us_to_get_your_age_race_ethnicity_and_trimester">Allow us to get your age, race, ethnicity, and trimester?</string>
     <string name="view_previous_entries">View previous entries</string>
     <string name="dashboard">Dashboard</string>
     <string name="recommendations">Recommendations</string>
     <string name="graphs">graphs</string>
-    <string name="journal">Journal</string>
+    <string name="journal">Journal Entry</string>
     <string name="settings">Settings</string>
+    <string name="what_did_you_eat_today">What did you eat today?</string>
+    <string name="title">Title</string>
+    <string name="description">Description</string>
+    <string name="finally_what_is_your_name">Finally, what is your name?</string>
+    <string name="name">Name</string>
+    <string name="first_name">first name</string>
+    <string name="search_for_recommendations">search for recommendations</string>
     <string-array name="ageArray">
         <item>Select your age group</item>
         <item>0-9</item>
@@ -57,6 +64,20 @@
         <item>Question 2</item>
         <item>Topic 1</item>
         <item>Topic 2</item>
+    </string-array>
+    <string-array name="journalArray">
+        <item>Select a journal prompt</item>
+        <item>How are you really feeling?</item>
+        <item>What are some goals for today? The future?</item>
+        <item>What did you eat today?</item>
+        <item>List the sedentary and physical activities you did today!</item>
+        <item>Reflect on your journey</item>
+        <item>Spill some thoughts!</item>
+    </string-array>
+    <string-array name="languageArray">
+        <item>English</item>
+        <item>Mandarin</item>
+        <item>Spanish</item>
     </string-array>
 
 

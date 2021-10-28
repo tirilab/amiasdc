@@ -9,55 +9,76 @@
             android:roundIcon="@mipmap/ic_launcher_round"
             android:supportsRtl="true"
             android:theme="@style/Theme.MAMIA">
-        <activity android:name=".InputSettingsActivity"
+        <activity android:name=".Preferences"
                   android:exported="true"
-                  android:screenOrientation="fullSensor"
-                  android:parentActivityName=".InputActivity">
+                  android:parentActivityName=".InputActivity"
+                  android:screenOrientation="fullSensor">
         </activity>
-        <activity android:name=".InputRecommendationsActivity"
-                  android:exported="true"
-                  android:screenOrientation="fullSensor"
-                  android:parentActivityName=".InputActivity">
+        <activity
+                android:name=".InputJournalPreviousActivity"
+                android:exported="true"
+                android:parentActivityName=".InputJournalActivity"
+                android:screenOrientation="fullSensor">
         </activity>
-        <activity android:name=".InputDashboardActivity"
-                  android:exported="true"
-                  android:screenOrientation="fullSensor"
-                  android:parentActivityName=".InputActivity">
+        <activity
+                android:name=".InputFitbitActivity"
+                android:exported="true"
+                android:parentActivityName=".InputActivity"
+                android:screenOrientation="fullSensor">
         </activity>
-        <activity android:name=".InputJournalActivity"
-                  android:exported="true"
-                  android:screenOrientation="fullSensor"
-                  android:parentActivityName=".InputActivity">
+        <activity
+                android:name=".InputRecommendationsActivity"
+                android:exported="true"
+                android:parentActivityName=".InputActivity"
+                android:screenOrientation="fullSensor">
+        </activity>
+        <activity
+                android:name=".InputDashboardActivity"
+                android:exported="true"
+                android:parentActivityName=".InputActivity"
+                android:screenOrientation="fullSensor">
+        </activity>
+        <activity
+                android:name=".InputJournalActivity"
+                android:exported="true"
+                android:parentActivityName=".InputActivity"
+                android:screenOrientation="fullSensor">
         </activity>
         <activity
                 android:name=".InputActivity"
                 android:exported="true"
-                android:screenOrientation="fullSensor"
-                android:parentActivityName=".IntroActivity4">
+                android:parentActivityName=".IntroActivity5"
+                android:screenOrientation="fullSensor">
+        </activity>
+
+        <activity android:name=".IntroActivity5"
+                  android:exported="true"
+                  android:parentActivityName=".IntroActivity4"
+                  android:screenOrientation="fullSensor">
         </activity>
         <activity
                 android:name=".IntroActivity4"
                 android:exported="true"
-                android:screenOrientation="fullSensor"
-                android:parentActivityName=".IntroActivity3">
+                android:parentActivityName=".IntroActivity3"
+                android:screenOrientation="fullSensor">
         </activity>
         <activity
                 android:name=".IntroActivity3"
                 android:exported="true"
-                android:screenOrientation="fullSensor"
-                android:parentActivityName=".IntroActivity2">
+                android:parentActivityName=".IntroActivity2"
+                android:screenOrientation="fullSensor">
         </activity>
         <activity
                 android:name=".IntroActivity2"
                 android:exported="true"
-                android:screenOrientation="fullSensor"
-                android:parentActivityName=".IntroActivity1">
+                android:parentActivityName=".IntroActivity1"
+                android:screenOrientation="fullSensor">
         </activity>
         <activity
                 android:name=".IntroActivity1"
                 android:exported="true"
-                android:screenOrientation="fullSensor"
-                android:parentActivityName=".MainActivity">
+                android:parentActivityName=".MainActivity"
+                android:screenOrientation="fullSensor">
         </activity>
         <activity
                 android:name=".MainActivity"

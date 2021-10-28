@@ -30,7 +30,7 @@ public class IntroActivity4 extends AppCompatActivity {
         nextButton = findViewById(R.id.button4);
         // when click next button
         nextButton.setOnClickListener(view -> {
-            Intent i = new Intent(IntroActivity4.this, InputActivity.class);
+            Intent i = new Intent(IntroActivity4.this, IntroActivity5.class);
             startActivity(i);
         });
 

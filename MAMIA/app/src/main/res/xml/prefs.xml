@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory android:title="Notification Settings">
+        <SwitchPreference
+                android:defaultValue="false"
+                android:title="Enable Push Notifications"
+                android:key="switch_preference_1"
+                android:summaryOn="Notifications are on"
+                android:summaryOff="Notifications are off"/>
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="Display Settings">
+        <Preference
+                android:key="language"
+                android:title="Language"
+                android:summary="Choose text language"/>
+        <Preference
+                android:key="connect_fitbit"
+                android:title="Connect Fitbit"
+                android:summary="Connect your fitbit to display biometric data"/>
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="Personal Data Settings">
+        <Preference
+                android:key="type_of_consent"
+                android:title="Type of Consent"
+                android:summary="Choose what information you consent to being stored"/>
+
+        <Preference
+                android:key="delete_fitbit_data"
+                android:title="Delete Fitbit Data"
+                android:summary="Delete all stored fitbit data. This cannot be reversed"/>
+        <Preference
+                android:key="delete_journal_data"
+                android:title="Delete Journal Data"
+                android:summary="Delete all stored journal data. This cannot be reversed"/>
+        <Preference
+                android:key="download_data"
+                android:title="Download Data"
+                android:summary="Download all app data to files"/>
+    </PreferenceCategory>
+
+    <Preference
+            android:key="faq"
+            android:title="FAQ" />
+    <Preference
+            android:key="about"
+            android:title="About" />
+    <Preference
+            android:key="software_update"
+            android:title="Software Update" />
+</PreferenceScreen>
