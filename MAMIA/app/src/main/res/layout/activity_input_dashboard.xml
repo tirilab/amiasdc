@@ -25,14 +25,15 @@
             app:layout_constraintVertical_bias="0.05"/>
 
     <ImageView
-            android:layout_width="294dp"
-            android:layout_height="563dp"
-            app:srcCompat="@drawable/screen_shot_2021_09_29_at_9_23_27_pm"
+            android:layout_width="500dp"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/dashboard"
+            android:rotation="90"
             android:id="@+id/imageView"
-            app:layout_constraintTop_toBottomOf="@+id/dashboard_title"
+            app:layout_constraintTop_toTopOf="@+id/dashboard_title"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="15dp"
             android:contentDescription="@string/graphs"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
